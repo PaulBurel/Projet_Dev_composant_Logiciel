@@ -51,12 +51,6 @@ public class ApiGateaway {
         return response;
     }
 
-    @HystrixCommand(fallbackMethod = "defaultActeur")
-
-
-
-
-
     @Bean
     @LoadBalanced
     public RestTemplate restTemplate() {
